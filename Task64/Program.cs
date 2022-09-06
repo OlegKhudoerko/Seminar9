@@ -10,7 +10,7 @@ int N = Convert.ToInt32(Console.ReadLine());
 
 string PrintNumbers(int start, int end)
 {
-    if (M > N) return ("Не допустимые значения M и N");
+    if (start > end) return ("Не допустимые значения M и N");
     if (start == end) return start.ToString();
     return (start + ", " + PrintNumbers(start + 1, end));
 }
